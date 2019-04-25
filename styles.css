@@ -1,0 +1,112 @@
+@charset "utf-8";
+/* CSS Document */
+
+.banner{
+	animation-name: fade-in-out;
+	animation-duration: 10s;
+	animation-iteration-count: infinite;
+	width: 300px;
+	height: 600px;
+	background: rgb(187, 168, 0);
+
+}
+
+@keyframes fade-in-out {
+	0% { opacity: 0;}
+	10% { opacity: 1;}
+	90% { opacity: 1;}
+	100% { opacity: 0;}
+}
+
+
+.buy_now{
+	animation-name:green-box-move;
+	animation-fill-mode: forwards;
+	animation-duration: 2s;
+	animation-delay: 3s;
+	transition-timing-function: ease-in;
+	animation-iteration-count: infinite;
+	background: rgb(172, 112, 0);
+	width: 250px;
+	height: 70px;
+	top: 510px;
+	left: 32px;
+	position:absolute;
+}
+
+@keyframes green-box-move{
+	0%   {transform: translate(0px, 0px) ;}
+	100% {transform: translate(0px, 0px) ;}
+}
+
+.buy_now_text{
+	text-align: center;
+	font-size: 40px;
+	margin-top: 12px;
+	font-family: sans-serif;
+}
+
+.name{
+	position: absolute;
+	top: 10px;
+	left: 60px;
+	animation-name: name;
+	animation-fill-mode: forwards;
+	animation-duration: 10s;
+	animation-delay: 1s;
+	transition-timing-function: ease-in;
+	animation-iteration-count: infinite;
+}
+.name_text {
+	font-family: sans-serif;
+	font-size: 80px;
+	font-weight: bold;
+	text-align: center;
+}
+@keyframes name{
+	0% { opacity: 0;}
+	10% { opacity: 1;}
+	90% { opacity: 1;}
+	100% { opacity: 0;}
+}
+
+
+.description1{
+	position: absolute;
+	top: 160px;
+	left: 20px;
+	font-weight: bold;
+}
+.description1_text{
+	font-family: sans-serif;
+	font-size: 32px;
+	text-align: center;
+}
+
+.description2{
+	position: absolute;
+	font-family: sans-serif;
+	font-size: 23px;
+	top: 230px;
+	left: 18px;
+	text-align: center;
+}
+.shirt{
+	height: 170px;
+	width: 170px;
+	position: absolute;
+	top: 320px;
+	left: -200px;
+	animation-name: shirt-move;
+	animation-fill-mode: forwards;
+	animation-duration: 10s;
+	animation-delay: 1s;
+	animation-iteration-count: infinite;
+}
+@keyframes shirt-move{
+	0%   {transform: translate(0px, 0px) ;}
+	20% {transform: translate(270px, 0px) ;}
+	70% {transform: translate(270px, 0px) ;}
+	90% {transform: translate(0px, 0px) ;}
+	100%   {transform: translate(0px, 0px) ;}
+}
